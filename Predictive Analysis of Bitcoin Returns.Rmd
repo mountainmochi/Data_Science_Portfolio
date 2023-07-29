@@ -1,0 +1,291 @@
+---
+title: "Final Project"
+author: "Hyojun Kim"
+date: "2023-05-22"
+output: html_document
+---
+
+# 1. Problem Statement:
+
+The objective of this project is to develop a robust forecasting model to predict the future returns of Bitcoin based on historical trade data. Bitcoin, the longest-running and most well-known cryptocurrency, was first released as open source in 2009 by the anonymous Satoshi Nakamoto. It operates as a decentralized medium of digital exchange, with transactions verified and recorded in a public distributed ledger called the blockchain.
+
+The historical Bitcoin market data provided in the form of CSV files contains minute-to-minute updates of various metrics, including OHLC (Open, High, Low, Close) prices, Volume in BTC and indicated currency, and weighted Bitcoin price. The data spans from January 2012 to March 2021, covering a significant period of Bitcoin's trading history.
+
+With this data, we aim to develop a forecasting model that leverages the historical trade data to predict the future returns of Bitcoin. By analyzing factors such as trade volume, opening price, closing price, and other technical indicators, we can gain insights into the future price movements of Bitcoin.
+
+# 2. Assumptions/Hypotheses about Data and/or Modeling:
+
+Assumption: Cryptocurrency markets, including Bitcoin, are influenced by various factors such as trade volume, opening price, closing price, and other technical indicators. These factors have the potential to provide valuable information for predicting future returns.
+
+Hypothesis: Increased trade volume in Bitcoin may indicate higher demand, potentially leading to increased returns. Extreme highs or lows in Bitcoin price within a given time period could suggest a volatile market, which might influence future returns.
+
+Modeling Approach: To forecast Bitcoin prices, we will employ several models including ARFIMA (AutoRegressive Fractionally Integrated Moving Average), ARIMA (AutoRegressive Integrated Moving Average), ETS (Exponential Smoothing State Space Model) and SARIMA (Seasonal AutoRegressive Integrated Moving Average). These models are capable of capturing dependencies and incorporating memory into the forecasting process.
+
+# 3. Data Preparation:
+
+```{r setup, include=FALSE}
+
+# Load libraries
+library(readr)
+library(dplyr)
+library(lubridate)
+library(zoo)
+library(ggplot2)
+library(corrplot)
+library(imputeTS)
+library(forecast)
+library(TTR)
+library(tseries)
+
+```
+
+```{r}
+# Load the data
+data <- read.csv('/Users/hyojun/Desktop/data/bitstampUSD_1-min_data_2012-01-01_to_2021-03-31.csv')
+
+# Convert Timestamp to datetime format
+data$Timestamp <- as.POSIXct(data$Timestamp, origin = "1970-01-01", tz = "UTC")
+
+# Check data structure
+str(data)
+
+# Summary statistics
+summary(data)
+```
+
+# 4. Data Properties (Stationarity, Correlations, Data Distribution) and Exploratory Data Analysis
+
+```{r}
+
+# Check for missing values
+print(paste("Missing values: ", sum(is.na(data))))
+
+# Plotting the closing prices with better visualization
+ggplot(data, aes(x=Timestamp, y=Close)) +
+  geom_line() +
+  labs(x="Date", y="Close Price", title="Bitcoin Closing Prices Over Time") +
+  theme_minimal()
+
+# Histogram of Close prices to understand the distribution
+ggplot(data, aes(Close)) +
+  geom_histogram(binwidth = 1000, fill = "blue", color = "black") +
+  labs(x = "Close Price", y = "Frequency", title = "Distribution of Close Prices") +
+  theme_minimal()
+
+# Correlation plot
+correlation_matrix <- cor(data[complete.cases(data), -1], use = "everything")  # exclude timestamp and handling NA values
+corrplot(correlation_matrix, method = "circle")
+
+## Checking Stationarity before modeling after splitting into train and test
+
+```
+
+# 5. Data Processing (Anomaly Detection, Cleansing and Imputations) and Transformations
+
+```{r}
+
+# Handling missing values using spline interpolation
+data$Close <- na.spline(data$Close, na.rm = FALSE)
+
+
+```
+
+# 6. Feature Engineering
+
+
+```{r}
+
+# Engineering a rolling standard deviation feature
+window_size <- 50
+data$RollingStd <- rollapplyr(data$Close, width = window_size, FUN = sd, fill = NA)
+
+# Calculate technical indicators
+data$SMA20 <- SMA(data$Close, n = 20)
+data$RSI14 <- RSI(data$Close, n = 14)
+macd_result <- MACD(data$Close)
+data$MACD <- macd_result[, "macd"]
+
+data$CloseMA7 <- rollmean(data$Close, k = 7, fill = NA, align = "right")
+
+# Let's see a glimpse of the data now
+head(data)
+
+
+
+```
+
+# 7. Proposed Approaches (Model) with Justification and Trade-Offs, if Any
+
+```{r}
+
+# Calculate the index that splits the data into 80% training and 20% testing
+split_index <- round(nrow(data) * 0.8)
+
+# Create the training and testing sets
+train <- data[1:(nrow(data) - 12), 'Close']
+test <- data[(nrow(data) - 11):nrow(data), 'Close']
+
+# Sample a subset of the data for the ADF test
+sample_size <- 1000  # Adjust the sample size as per your computational limitations
+sample_data <- sample(train, size = sample_size)
+
+# Check if train data is stationary using Augmented Dickey Fuller Test
+adf_test <- adf.test(sample_data)
+
+# Print the results
+print(adf_test)
+
+# If necessary, difference the data to make it stationary
+if (adf_test$p.value > 0.05) {
+  train <- diff(train)
+  test <- diff(test)
+}
+
+```
+
+## Model 1: ARFIMA
+
+```{r}
+
+# Fit an ARFIMA model using the optimal d value
+arfima_fit <- arfima(ts(train, frequency = 12))
+
+# Make predictions on the test data
+arfima_pred <- forecast(arfima_fit, h=12)
+
+```
+
+## Model 2: ARIMA
+
+```{r}
+
+# Automatically select the best ARIMA model for the training data
+arima_fit <- auto.arima(ts(train))
+
+# Make predictions on the test data using the best ARIMA model
+arima_pred <- forecast(arima_fit, h = 12)
+
+```
+
+## Model 3: Exponential Smoothing
+
+```{r}
+
+# Fit an exponential smoothing state space model
+ets_fit <- ets(ts(train))
+
+# Make predictions on the test data using the ETS model
+ets_pred <- forecast(ets_fit, h = 12)
+
+
+
+```
+
+## Model 4: SARIMA
+
+```{r}
+
+# Automatically select the best SARIMA model for the training data
+sarima_fit <- auto.arima(ts(train), seasonal = TRUE)
+
+# Make predictions on the test data using the best SARIMA model
+sarima_pred <- forecast(sarima_fit, h = 12)
+
+```
+
+
+# 8. Results (Accuracy) and Learnings from the Methodology
+
+```{r}
+
+# Calculate the accuracy of the ARFIMA model
+arfima_accuracy <- accuracy(arfima_pred, test)
+cat("\nARFIMA Accuracy:\n")
+print(arfima_accuracy)
+
+# Calculate the accuracy of the ARIMA model
+arima_accuracy <- accuracy(arima_pred, test)
+cat("\nARIMA Accuracy:\n")
+print(arima_accuracy)
+
+# Calculate the accuracy of the ETS model
+ets_accuracy <- accuracy(ets_pred, test)
+cat("\nETS Accuracy:\n")
+print(ets_accuracy)
+
+# Calculate the accuracy of the SARIMA model
+sarima_accuracy <- accuracy(sarima_pred, test)
+cat("\nSARIMA Accuracy:\n")
+print(sarima_accuracy)
+
+
+```
+
+The ETS model has the lowest values for the RMSE, MAE, and MAPE accuracy measures on the test set. Therefore, based on these measures, the ETS model appears to be the best performing model among the four models.
+
+Here’s a ranking of the models based on their RMSE values on the test set, from best to worst:
+
+ETS (RMSE = 46.79980)
+SARIMA (RMSE = 64.97350)
+ARIMA (RMSE = 64.97350)
+ARFIMA (RMSE = 409.29779)
+
+
+## Plots of the Predictions
+
+```{r}
+
+# Generate plot for ARFIMA predictions
+arfima_plot <- ggplot() +
+  geom_ribbon(aes(x = index(test), ymin = arfima_pred$lower[,2], ymax = arfima_pred$upper[,2]), fill = "grey80") +
+  geom_line(aes(x = index(test), y = test, colour = "Actual")) +
+  geom_line(aes(x = index(test), y = arfima_pred$mean, colour = "Predicted")) +
+  labs(x = "Date", y = "Price", title = "ARFIMA: Actual vs Predicted") +
+  scale_color_manual(name = "", values = c("Actual" = "blue", "Predicted" = "red")) +
+  theme_minimal()
+
+# Generate plot for ARIMA predictions
+arima_plot <- ggplot() +
+  geom_ribbon(aes(x = index(test), ymin = arima_pred$lower[,2], ymax = arima_pred$upper[,2]), fill = "grey80") +
+  geom_line(aes(x = index(test), y = test, colour = "Actual")) +
+  geom_line(aes(x = index(test), y = arima_pred$mean, colour = "Predicted")) +
+  labs(x = "Date", y = "Price", title = "ARIMA: Actual vs Predicted") +
+  scale_color_manual(name = "", values = c("Actual" = "blue", "Predicted" = "red")) +
+  theme_minimal()
+
+# Generate plot for ETS predictions
+ets_plot <- ggplot() +
+  geom_ribbon(aes(x = index(test), ymin = ets_pred$lower[,2], ymax = ets_pred$upper[,2]), fill = "grey80") +
+  geom_line(aes(x = index(test), y = test, colour = "Actual")) +
+  geom_line(aes(x = index(test), y = ets_pred$mean, colour = "Predicted")) +
+  labs(x = "Date", y = "Price", title = "ETS: Actual vs Predicted") +
+  scale_color_manual(name = "", values = c("Actual" = "blue", "Predicted" = "red")) +
+  theme_minimal()
+
+# Generate plot for SARIMA predictions
+sarima_plot <- ggplot() +
+  geom_ribbon(aes(x = index(test), ymin = sarima_pred$lower[,2], ymax = sarima_pred$upper[,2]), fill = "grey80") +
+  geom_line(aes(x = index(test), y = test, colour = "Actual")) +
+  geom_line(aes(x = index(test), y = sarima_pred$mean, colour = "Predicted")) +
+  labs(x = "Date", y = "Price", title = "SARIMA: Actual vs Predicted") +
+  scale_color_manual(name = "", values = c("Actual" = "blue", "Predicted" = "red")) +
+  theme_minimal()
+
+
+# Display the plots
+arfima_plot
+arima_plot
+ets_plot
+sarima_plot
+
+```
+
+# 9. Future Work
+
+Experiment with additional models and techniques: In addition to the ARFIMA, ARIMA, ETS, and SARIMA models used in this project, it would be interesting to experiment with other forecasting models and techniques to see if they can improve the accuracy of the predictions. For example, exploring the use of machine learning algorithms such as neural networks or support vector regression to forecast Bitcoin prices could be a promising avenue for future research.
+
+Incorporate additional data sources: Incorporating additional data sources into the analysis, such as news articles or social media sentiment, could provide valuable context and help better understand the factors that influence Bitcoin prices.
+
+Conduct a more detailed analysis of model performance: Conducting a more detailed analysis of the performance of each model, including an examination of the residuals and an evaluation of the model’s assumptions, could help better understand the strengths and weaknesses of each model and identify areas for improvement.
+
+Explore ensemble methods: Exploring the use of ensemble methods to combine the forecasts from multiple models could potentially improve the accuracy of the predictions by leveraging the strengths of each individual model.
