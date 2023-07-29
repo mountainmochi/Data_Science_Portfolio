@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/AlmaMater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Alma_Mater" />
+
+        <CheckBox
+            android:id="@+id/AltgeldHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Altgeld_Hall" />
+
+        <CheckBox
+            android:id="@+id/ActivitiesandRecreationCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Activities_and_Recreation_Center" />
+
+        <CheckBox
+            android:id="@+id/Armory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Armory" />
+
+        <CheckBox
+            android:id="@+id/AstronomicalObservatory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Astronomical_Observatory" />
+
+        <CheckBox
+            android:id="@+id/BeckmanInstituteforAdvancedScienceandTechnology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Beckman_Institute_for_Advanced_Science_and_Technology" />
+
+        <CheckBox
+            android:id="@+id/FoellingerAuditorium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Foellinger_Auditorium" />
+
+        <CheckBox
+            android:id="@+id/GraingerEngineeringLibraryInformationCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Grainger_Engineering_Library_Information_Center" />
+
+        <CheckBox
+            android:id="@+id/HalleneGateway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Hallene_Gateway" />
+
+        <CheckBox
+            android:id="@+id/IlliniUnion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Illini_Union" />
+
+        <CheckBox
+            android:id="@+id/Illini_Union_Bookstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Illini_Union_Bookstore" />
+
+        <CheckBox
+            android:id="@+id/KrannertArtMuseumandKinkeadPavilion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Krannert_Art_Museum_and_Kinkead_Pavilion" />
+
+        <CheckBox
+            android:id="@+id/KrannertCenterforthePerformingArts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Krannert_Center_for_the_Performing_Arts" />
+
+        <CheckBox
+            android:id="@+id/LincolnHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Lincoln_Hall" />
+
+        <CheckBox
+            android:id="@+id/McFarlandBellTower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/McFarland_Bell_Tower" />
+
+        <CheckBox
+            android:id="@+id/MemorialStadium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Memorial_Stadium" />
+
+        <CheckBox
+            android:id="@+id/MorrowPlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Morrow_Plots" />
+
+        <CheckBox
+            android:id="@+id/NationalCenterforSupercomputingApplications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/National_Center_for_Supercomputing_Applications" />
+
+        <CheckBox
+            android:id="@+id/RoundDairyBarns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Round_Dairy_Barns" />
+
+        <CheckBox
+            android:id="@+id/SpurlockMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Spurlock_Museum" />
+
+        <CheckBox
+            android:id="@+id/StateFarmCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/State_Farm_Center" />
+
+        <CheckBox
+            android:id="@+id/ThomasMSiebelCenterforComputerScience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Thomas_M_Siebel_Center_for_Computer_Science" />
+
+        <CheckBox
+            android:id="@+id/UIIceArena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/UI_Ice_Arena" />
+
+        <CheckBox
+            android:id="@+id/UniversityLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/University_Library" />
+
+        <CheckBox
+            android:id="@+id/Arboretum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/University_of_Illinois_Arboretum" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
