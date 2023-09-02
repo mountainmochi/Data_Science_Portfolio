@@ -1,0 +1,420 @@
+---
+title: "Unemployment Rate"
+author: "Vanilla Ice Cream"
+date: '2020 11 24'
+output:
+  html_document:
+    theme: readable
+    toc: yes
+---
+## Introduction
+```{r}
+#There are five independent variables: year, month, state, county, and rate. Year is from 1990 to 2016. Month contains 12 months from January to December. State contains 50 states in the United States. County represents states’ counties, and Rate is from 0 to 58.4, representing each state’s unemployment rate.
+
+#This dataset is based on the United States Department of Labor Bureau of Labor Statistics. This represents the county-level unemployment data. The dataset is broken down by state and month.
+
+#We, Vanilla Ice Cream, find unemployment rates by counties in 50 states to determine which county and state are the best place to stay and look for jobs. By comparing the unemployment rates based on the historical factors, we predict how each state will lower the unemployment rates than before to create more jobs. We demonstrate that unemployment could impact the United States economy and how this will affect individuals in the United States.
+```
+
+
+## Data Source
+```{r}
+#Link: https://www.kaggle.com/jayrav13/unemployment-by-county-us
+```
+
+
+## 1. The Worst month to find a job:
+```{r}
+#data cleaning
+
+unemrate = read.csv("unemrate.csv")
+summary(unemrate)
+dplyr::glimpse(unemrate)
+#The goal is to find the worst month to look for a job 
+```
+```{r Grouping Months}
+#Grouping to see which month had the highest unemployment rate.
+library(dplyr, warn.conflicts = FALSE)
+
+# Suppress summarise info
+options(dplyr.summarise.inform = FALSE)
+
+unemrate %>%
+  group_by(Month) %>%
+  summarise(unem_mrate = mean(Rate)) %>% 
+  arrange(desc(unem_mrate))
+
+```
+```{r}
+#Looking at the average unemployment rate from the year 1990 to 2016, January and February, the beginning of the year seems to be the worst month to start looking for a job.
+#However, instead of looking at a flat number, there could have been a trend throughout the years.
+#So the trend for each month was utilized to predict monthly rates in 2017.
+
+
+# There have been three significant increase in unemployment rate in each 1992, 2002 and 2009. 
+
+# Contributing factor of 1992: Recession of the early 1990s. 1982 to 1990 was a period of robust growth in American economy with low inflation. In November of 1987, stock markets around the world crashed. Many investors took it as a sign of large US budget deficit. 
+
+# Contributing factors of 2002: Recession of 2001, which lasted from March to November. This was first due to Y2K scare. Computer users and programmers were concerned that computers would stop functioning as time transitioned from 1999 to 2000. Computer sales experienced a significant decline, and many dot-com companies went bankrupt. The abrupt increase in unemployment rate in April 2002 is due to significant increase in total number of people looking for jobs. 
+
+# Contributing factors of 2009: Great Recession (2007-2009) due to US housing bubbles and global financial crisis. Apprximately 800,000 jobs were lost and the unemployment rate temporarily peaked at 10 percent this year. 
+
+#January
+Jan_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "January") %>%
+  summarise(unem_ymrate = mean(Rate))
+Jan_unem
+
+Jan_model <- lm(unem_ymrate ~ Year, data = Jan_unem)
+summary(Jan_model)
+```
+
+```{r}
+#To check the trend visually, plotting.
+x <- Jan_unem$Year
+y <- Jan_unem$unem_ymrate
+plot(x, y, main = "January Unemployment Rate",
+     xlab = "Year", ylab = "Unemployment Rate",
+     pch = 19, frame = FALSE)
+abline(lm(y ~ x, data = Jan_unem), col = "blue")
+
+#There are too many jumps to see a trend. Since there seems to be some incident in certain years that makes the unemployment rate jump, data from 2010 is taken to predict the rate for 2017 if there is no other incident affecting the unemployment rate.
+```
+
+```{r}
+#January
+Jan_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "January") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+Jan_unem
+
+Jan_model <- lm(unem_ymrate ~ Year, data = Jan_unem)
+summary(Jan_model)
+
+#To check the trend visually, plotting.
+x <- Jan_unem$Year
+y <- Jan_unem$unem_ymrate
+plot(x, y, main = "January Unemployment Rate",
+     xlab = "Year", ylab = "Unemployment Rate",
+     pch = 19, frame = FALSE)
+abline(lm(y ~ x, data = Jan_unem), col = "blue")
+```
+
+```{r}
+#February
+Feb_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "February") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Feb_model <- lm(unem_ymrate ~ Year, data = Feb_unem)
+```
+
+```{r}
+#To check the trend visually, plotting.
+x <- Feb_unem$Year
+y <- Feb_unem$unem_ymrate
+plot(x, y, main = "February Unemployment Rate",
+     xlab = "Year", ylab = "Unemployment Rate",
+     pch = 19, frame = FALSE)
+abline(lm(y ~ x, data = Feb_unem), col = "blue")
+```
+
+```{r}
+#March
+Mar_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "March") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Mar_model <- lm(unem_ymrate ~ Year, data = Mar_unem)
+```
+
+```{r}
+#April
+Apr_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "April") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Apr_model <- lm(unem_ymrate ~ Year, data = Apr_unem)
+```
+
+```{r}
+#May
+May_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "May") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+May_model <- lm(unem_ymrate ~ Year, data = May_unem)
+```
+
+```{r}
+#June
+Jun_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "June") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Jun_model <- lm(unem_ymrate ~ Year, data = Jun_unem)
+```
+
+```{r}
+#July
+Jul_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "July") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Jul_model <- lm(unem_ymrate ~ Year, data = Jul_unem)
+```
+
+```{r}
+#August
+Aug_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "August") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Aug_model <- lm(unem_ymrate ~ Year, data = Aug_unem)
+```
+
+```{r}
+#September
+Sep_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "September") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Sep_model <- lm(unem_ymrate ~ Year, data = Sep_unem)
+```
+
+```{r}
+#October
+Oct_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "October") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Oct_model <- lm(unem_ymrate ~ Year, data = Oct_unem)
+```
+
+```{r}
+#November
+Nov_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "November") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Nov_model <- lm(unem_ymrate ~ Year, data = Nov_unem)
+```
+
+```{r}
+#December
+Dec_unem = unemrate %>%
+  group_by(Year) %>%
+  filter(Month== "December") %>%
+  filter(Year > 2010) %>%
+  summarise(unem_ymrate = mean(Rate))
+
+Dec_model <- lm(unem_ymrate ~ Year, data = Dec_unem)
+```
+
+
+```{r}
+#January 2021 unemployment rate
+predict(Jan_model, newdata=data.frame(Year=2017))
+#February 2021 unemployment rate
+predict(Feb_model, newdata=data.frame(Year=2017))
+#March 2021 unemployment rate
+predict(Mar_model, newdata=data.frame(Year=2017))
+#April 2021 unemployment rate
+predict(Apr_model, newdata=data.frame(Year=2017))
+#May 2021 unemployment rate
+predict(May_model, newdata=data.frame(Year=2017))
+#June 2021 unemployment rate
+predict(Jun_model, newdata=data.frame(Year=2017))
+#July 2021 unemployment rate
+predict(Jul_model, newdata=data.frame(Year=2017))
+#August 2021 unemployment rate
+predict(Aug_model, newdata=data.frame(Year=2017))
+#September 2021 unemployment rate
+predict(Sep_model, newdata=data.frame(Year=2017))
+#October 2021 unemployment rate
+predict(Oct_model, newdata=data.frame(Year=2017))
+#November 2021 unemployment rate
+predict(Nov_model, newdata=data.frame(Year=2017))
+#December 2021 unemployment rate
+predict(Dec_model, newdata=data.frame(Year=2017))
+
+#January and February still are the worst two months with the highest rate of unemployment. However, the overall rate has decreased over the years. It is evident that unemployment rate has constantly gone down since 2009, indiciating the overall improvement in American economy. 
+```
+
+## 2. The Best month to find a job:
+```{r The Lowest Unemployment Rate}
+#To count the unemrate's rows
+nrow(unemrate)
+
+#To find the lowest unemployment rate's row in this dataset
+min(unemrate$Rate)
+
+#In general,
+(model1 = unemrate %>%
+  group_by(Month) %>%
+  summarise(meanRate = mean(Rate)) %>%
+  arrange(desc(meanRate)))
+# We can see that the lowest average unemployment rate is in October; the value is 5.465816. After May, the unemployment rate increases as school ends, companies open job applications, and new jobs are created. This function tells that the economy is better in fall than in winter.  
+
+model1[which.min(model1$meanRate),]
+
+#In general,
+(model2 = unemrate %>%
+  group_by(Year, Month) %>%
+  summarise(meanRate = mean(Rate)) %>%
+  arrange(desc(meanRate)))
+# After adding Year, we see that the lowest unemployment is in October, 2000 which is 3.757574; whereas, the highest unemployment is 10.600035 in January 2010.
+
+model2[which.min(model2$meanRate),]
+
+```
+
+```{r First Regression} 
+
+reg1 = lm(Rate ~ Year + Month, data = unemrate)
+summary(reg1)
+#This regression visualizes the importance of the Month variation. Since "MonthOctober"'s coefficient is -5.468e-01, this decreases the unemployment rate as the coefficient increases. People likely find a job and finalize the job process in October than in other months. Its p-value is close to zero which is statistically significant. 
+
+reg1$coefficients
+summary(reg1)$r.squared
+#This model explains 3.48% of the Rate's variation by looking at the linear relationship between Year and Month. Since Year and Month is the time that reflects the unemployment rate, we need to see what affects the unemployment rate in October. For instance, companies reopen their career applications, starting in August, and job candidates easily look for jobs in fall. These events decrease the unemployment rate in October and make the job market better off. 
+
+```
+
+```{r }
+#The unemployment rate by Month's visualization.
+model3 = unemrate %>%
+  select(c(Month, Year, Rate)) %>%
+  group_by(Month, Year) %>%
+  summarise(meanRate = mean(Rate)) %>%
+  arrange(desc(meanRate))
+
+month2 = c(model3$Month)
+monthFa = factor(month2)
+
+plot(meanRate ~ monthFa, main = "The Unemployment Rate by Month", xlab = "Month", ylab = "The Unemployment Rate", pch = 20, cex = 1.5,col = "dodgerblue", data = model3)
+
+# According to the graph, the unemployment rate temporarily rises during the winter (December to January). This is largely due to lower demand of labor forces by agricultural and construction industries in this particular season. Winter is dry and cold in the US, making the land not suitable for farming and construction sites shut down. These labor forces are pushed to quit their job. 
+```
+```{r include=FALSE}
+library(ggplot2)
+```
+
+```{r The Density Plot}
+library(ggplot2)
+
+#Using the density plot to visualize "meanRate."
+
+ggplot(model1, aes(meanRate)) + geom_density() + ggtitle("The Density Plot of Model1")
+#The unemployment rate is between 5.5 to 8.
+
+ggplot(model2, aes(meanRate)) + geom_density() + ggtitle("The Density Plot of Model2")
+#The unemployment rate is between 3 to 11.
+
+ggplot(model3, aes(meanRate)) + geom_density() + ggtitle("The Density Plot of Model3")
+#The unemployment rate is between 3 to 11.
+
+```
+
+
+## 3. The Best and the Worst State to find a job:
+```{r}
+#State unemployment rate
+Mean_by_State = unemrate %>% group_by(State) %>% summarise(mean_rate = mean(Rate))
+
+Feb_Mean = unemrate %>% filter(Month== "February") %>% group_by(Year) %>% summarise(mean_rate = mean(Rate))
+Feb_Mean_Model = plot(mean_rate ~ Year, main = "State Unemployment Mean Rate", 
+                      xlab = "Year", ylab = "Unemployment Rate", pch = 20, cex = 1.5, col = "dodgerblue", data = Feb_Mean)
+
+# The best state for employment was found to be Nebraska. It presented the lowest unemployment rate among all states in the country. This could be largely attributed to diverse make-up of industries, such as agriculture, bio-sciences, renewable energy, data services, tourism, transportation, and many more. There is always high demand of labor forces from various industries. Also, the geographical location of Nebraska makes its job market highly accessible to labor forces from other states. It is located in the center of the country. 
+
+#The worst state for employment was found to be Arizona. It presented the lowest unemployment rate among all states in the country. This could be due to its heavy reliance on agriculture for living, so that the general unemployment falls more dramatically in particular seasons compared to other states. Also, federally recognized tribes in Arizona are eligible for funding and services, resulting in less demand for jobs. 
+```
+
+## 4. County unemployment Rate
+```{r}
+#County unemployment Rate
+county_mean = unemrate %>% select(c(State, County, Rate)) %>% group_by(State, County) %>% summarise(mean_rate = mean(Rate))
+
+View(county_mean)
+county = c(county_mean$County)
+County_fa = factor(county)
+
+county_mean_model =plot(mean_rate ~ County_fa, main = "Unemployment Rate in Each County", 
+                                 xlab = "County", ylab = "Unemployment Rate", pch = 20, cex = 1.5,col = "dodgerblue", data = county_mean)
+
+
+county_mean[which.max(county_mean$mean_rate),]
+county_mean[which.min(county_mean$mean_rate),]
+
+#Here, We tried to figure out the mean of unemployment rate by county in each state and we found out that when only considering the unemployment rate in each county, Steele County in North Dakota has the lowest unemployment rate which is 2.12 and Imperial County in California has the highest unemployment rate which is 23.1.
+```
+
+```{r}
+#County Month by unemployment
+county_by_month_mean = unemrate %>% select(c(Month, State, County, Rate)) %>% group_by(State, County, Month) %>% summarise(mean_rate = mean(Rate))
+View(county_by_month_mean)
+
+month = c(county_by_month_mean$Month)
+Month_fa = factor(month)
+
+county_by_month_mean_model =plot(mean_rate ~ Month_fa, main = "Unemployment Rate in Each County by Month", 
+                                  xlab = "Month", ylab = "Unemployment Rate", pch = 20, cex = 1.5,col = "dodgerblue", data = county_by_month_mean)
+county_by_month_mean[which.max(county_by_month_mean$mean_rate),]
+county_by_month_mean[which.min(county_by_month_mean$mean_rate),]
+#We added month to find out what month of the year and which county has the lowest and highest unemployment rate. Before finding out the result, we have tried to plot the data, but since there were too many county in each state, we failed to read the plot. We found out that Yuma County in Arizona has the highest unemployment rate at August which is 28.7 and McPherson County in Nebraska at April has the lowest unemployment rate which is 1.67.
+```
+
+```{r}
+#Year by unemployment
+year_mean = unemrate %>% select(c(Year, Rate)) %>% group_by(Year) %>% summarise(mean_rate = mean(Rate))
+View(year_mean)
+
+year_mean_model = plot(mean_rate ~ Year, main = "Unemployment Rate by Year", 
+                       xlab = "Year", ylab = "Unemployment Rate", pch = 20, cex = 1.5, col = "dodgerblue", data = year_mean)
+
+#According to the plot, there were (reason why) 1992, and in early 2010s' unemployment rates are high.
+```
+
+## Summary
+```{r}
+# Winter season tends to have the highest unemployment rate.
+# Fall season tends to have the lowest unemployment rate.
+# Nebraska is the best state to get a job.
+# Arizona is the worst state to get a job.
+```
+
+
+
+
+
+
+
+
+
+
+
+
