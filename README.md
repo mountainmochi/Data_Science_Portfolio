@@ -1,10 +1,4 @@
----
-title: Data Science Portfolio
-output:
-  html_document:
-    toc: true
-    toc_float: true
----
+# Data Science Portfolio
 
 Welcome to my Data Science Portfolio. This collection showcases a curated selection of projects and presentations, offering a glimpse into my expertise in data science, machine learning, and natural language processing.
 
