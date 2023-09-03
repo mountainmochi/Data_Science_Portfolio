@@ -39,21 +39,21 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 - [PDF](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Predictive%20Analysis%20of%20Bitcoin%20Returns/Hyojun_Kim_TS_Final_Project.pdf)
 
-This project aimed to forecast Bitcoin's future returns using historical trade data from January 2012 to March 2021, which includes minute-to-minute metrics such as OHLC prices and trade volume. It's premised on the assumptions that Bitcoin markets are shaped by factors like trade volume and price points, with high volume potentially signaling increased returns and price fluctuations hinting at market volatility. To achieve accurate forecasting, models such as ARFIMA, ARIMA, ETS, and SARIMA were employed, capitalizing on their ability to capture market dependencies and integrate past behaviors into predictions.
+The project analyzed Bitcoin's historical trade data from January 2012 to March 2021, examining minute-to-minute OHLC prices and trade volume. Recognizing that trade volume and price points influence Bitcoin markets, the study predicted future returns. Models like ARFIMA, ARIMA, ETS, and SARIMA were employed to capture market patterns and historical trends for accurate forecasting.
 
 ### eCommerce Customer Segmentation
 *(Dec. 2022, ML Project)*
 
 - [PPT](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/eCommerce%20Customer%20Segmentation/Group3_Final_Presentation_inperson.pptx)
 
-The project focused on enhancing ecommerce book sales through an AI-powered Recommendation Engine, targeting the top 15% of customers. Using unsupervised clustering, tailored book suggestions were derived from user purchase history and engagement, anticipating a 20% sales boost within this segment. Findings were presented to the CMO/Webmaster, advocating for strategic algorithmic updates. This is an AI-Driven Ecommerce Personalization initiative.
+The project focused on enhancing ecommerce book sales through an AI-powered Recommendation Engine, targeting the top 15% of customers. Using unsupervised clustering, tailored book suggestions were derived from user purchase history and engagement, anticipating a 20% sales boost within this segment. The initiative was framed as an AI-Driven eCommerce Personalization strategy, with results presented to the CMO/Webmaster, emphasizing the importance of strategic algorithmic updates.
 
 ### The Patterns of Paying Debts of Credit Card Clients
 *(Dec. 2019, ML Project)*
 
 - [HTML](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
 
-This project aimed to predict credit card clients' default behavior through an analysis of the relationship between independent and dependent variables. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models like ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations. Based on the "Default of Credit Card Clients Data Set," the goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving an impressive accuracy rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
+This project aimed to predict credit card clients' default behavior through an analysis of the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models like ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations. After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving an impressive accuracy rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
 
 ---
 
@@ -71,7 +71,7 @@ Employed advanced NLP techniques, including data preprocessing, topic modeling, 
 
 - [Python](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Hackathon%20Project/Hackathon%20Project.py)
 
-In the project, we developed a model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis, achieving a respectable accuracy. This model, when incorporated, promises improved early interventions and potential cost savings for healthcare providers.
+In the project, my partner and I developed a model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis, achieving a respectable accuracy. This model, when incorporated, promises improved early interventions and potential cost savings for healthcare providers.
 
 ---
 
@@ -82,7 +82,7 @@ In the project, we developed a model to pinpoint patients likely needing surgery
 
 - [PDF](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Predictive%20Analysis%20of%20Bitcoin%20Returns/Hyojun_Kim_TS_Final_Project.pdf)
 
-This project aimed to forecast Bitcoin's future returns using historical trade data from January 2012 to March 2021, which includes minute-to-minute metrics such as OHLC prices and trade volume. It's premised on the assumptions that Bitcoin markets are shaped by factors like trade volume and price points, with high volume potentially signaling increased returns and price fluctuations hinting at market volatility. To achieve accurate forecasting, models such as ARFIMA, ARIMA, ETS, and SARIMA were employed, capitalizing on their ability to capture market dependencies and integrate past behaviors into predictions.
+The project analyzed Bitcoin's historical trade data from January 2012 to March 2021, focusing on minute-to-minute OHLC prices and trade volume. Bitcoin markets were influenced by factors including trade volume and price points; high volume often signaled increased returns, while price fluctuations indicated market volatility. To achieve accurate forecasting, models such as ARFIMA, ARIMA, ETS, and SARIMA were employed, harnessing their capability to capture market dependencies and integrate past behaviors into predictions.
 
 ### Unemployment Rate
 *(Dec. 2020, Time Series Project)*
