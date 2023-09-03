@@ -1,10 +1,10 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio. This collection showcases a curated selection of projects and presentations, offering a glimpse into my expertise in data science, machine learning, and natural language processing.
+Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects and presentations, each reflecting my expertise in data science, machine learning, and natural language processing.
 
-The portfolio encompasses a diverse array of domains, demonstrating my adeptness in applying cutting-edge techniques and tools. In cases where project materials like data are absent, it's often due to file size limitations or privacy considerations.
+Spanning across multiple domains, the portfolio encompasses a diverse array of domains, demonstrating my adeptness in applying cutting-edge techniques and tools. In cases where project materials like data are absent, it is often due to file size limitations or privacy considerations.
 
-I invite you to delve into these projects, each providing valuable insights into the realm of data science and underscoring my capabilities. Should you have any inquiries or potential collaborations, please feel free to reach out to me at kimhyojun@uchicago.edu.
+Delving into these projects will reveal the depth and breadth of advanced data science skills. For any inquiries or collaboration opportunities, please feel free to contact me at kimhyojun@uchicago.edu.
 
 ---
 
@@ -17,7 +17,7 @@ I invite you to delve into these projects, each providing valuable insights into
 
 ### Natural Language Processing
 - [AI's Evolutionary Path: What the Future Holds](#ais-evolutionary-path-what-the-future-holds)
-- [Hackathon Project (NLP)](#hackathon-project-nlp)
+- [Hackathon Project](#hackathon-project)
 
 ### Time Series Analysis and Forecasting
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
