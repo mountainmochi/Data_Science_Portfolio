@@ -10,24 +10,24 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 ## Table of Contents
 
-### [Machine Learning](#machine-learning)
+### Machine Learning
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
 - [eCommerce Customer Segmentation](#ecommerce-customer-segmentation)
 - [The Patterns of Paying Debts of Credit Card Clients](#the-patterns-of-paying-debts-of-credit-card-clients)
 
-### [Natural Language Processing](#natural-langugage-processing)
+### Natural Language Processing
 - [AI's Evolutionary Path: What the Future Holds](#ais-evolutionary-path-what-the-future-holds)
 - [Hackathon Project](#hackathon-project)
 
-### [Time Series Analysis and Forecasting](#time-series-analysis-and-forecasting)
+### Time Series Analysis and Forecasting
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
 - [Unemployment Rate](#unemployment-rate)
 
-### [Data Analysis and Visualization](#data-analysis-and-visualization)
+### Data Analysis and Visualization
 - [Chicago Rideshare Market Analysis](#chicago-rideshare-market-analysis)
 - [Statistical Analysis of U.S. Hospital Mortality Rates](#statistical-analysis-of-us-hospital-mortality-rates)
 
-### [Software Development](#software-development)
+### Software Development
 - [The I-Go Application](#the-i-go-application)
 
 ---
