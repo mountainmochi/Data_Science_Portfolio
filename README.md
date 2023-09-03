@@ -97,4 +97,4 @@ This project entailed developing the "I-Go" application using Google API. The ap
 
 ---
 
-This portfolio serves as a comprehensive showcase of my data science expertise, highlighting a diverse range of projects that demonstrate my ability to apply advanced techniques to real-world challenges. Feel free to explore each project to gain deeper insights into my capabilities. If you have any inquiries or potential collaborations, please feel free to reach out to me at kimhyojun@uchicago.edu.
+This portfolio serves as a comprehensive showcase of my data science, machine learning, and natural language processing expertise, highlighting a diverse range of projects that demonstrate my ability to apply advanced techniques to real-world challenges. Feel free to explore each project to gain deeper insights into my capabilities. If you have any inquiries or potential collaborations, please feel free to reach out to me at kimhyojun@uchicago.edu.
