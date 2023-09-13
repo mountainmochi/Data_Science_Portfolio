@@ -42,6 +42,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 The project analyzed Bitcoin's historical trade data from January 2012 to March 2021, examining minute-to-minute OHLC prices and trade volume. Recognizing that trade volume and price points influence Bitcoin markets, the study predicted future returns. Models like ARFIMA, ARIMA, ETS, and SARIMA were employed to capture market patterns and historical trends for accurate forecasting.
 
 *Language: R*
+
 *Libraries: dplyr; ggplot2; lubridate; forecast; imputeTS; corrplot*
 
 ### eCommerce Customer Segmentation
@@ -52,6 +53,7 @@ The project analyzed Bitcoin's historical trade data from January 2012 to March 
 The project focused on enhancing ecommerce book sales through an AI-powered Recommendation Engine, targeting the top 15% of customers. Using unsupervised clustering, tailored book suggestions were derived from user purchase history and engagement, anticipating a 20% sales boost within this segment. The initiative was framed as an AI-Driven eCommerce Personalization strategy, with results presented to the CMO/Webmaster, emphasizing the importance of strategic algorithmic updates.
 
 *Language: Python*
+
 *Libraries: pandas; numpy; matplotlib; seaborn; scikit-learn*
 
 ### The Patterns of Paying Debts of Credit Card Clients
@@ -62,6 +64,7 @@ The project focused on enhancing ecommerce book sales through an AI-powered Reco
 This project aimed to predict credit card clients' default behavior through an analysis of the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models like ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations. After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
 
 *Language: R*
+
 *Libraries: glm; glmnet; class; tree; randomForest; e1071; tensorflow; keras*
 
 ---
@@ -76,6 +79,7 @@ This project aimed to predict credit card clients' default behavior through an a
 Employed advanced NLP techniques, including data preprocessing, topic modeling, classification, targeted sentiment analysis, and Named Entity Recognition. Through the comprehensive analysis of 200,000 news articles, I discerned AI's profound impact across various professions and industry sectors, ultimately offering actionable insights and recommendations.
 
 *Language: Python*
+
 *Libraries: pandas; numpy; scikit-learn; matplotlib; seaborn; gensim; spacy; nltk; pyLDAvis; tensorflow*
 
 ### Hackathon Project
@@ -86,6 +90,7 @@ Employed advanced NLP techniques, including data preprocessing, topic modeling, 
 In the project, my partner and I developed a model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis, achieving a respectable accuracy. This model, when incorporated, promises improved early interventions and potential cost savings for healthcare providers.
 
 *Language: Python*
+
 *Libraries: pandas; tensorflow; matplotlib*
 
 ---
@@ -100,6 +105,7 @@ In the project, my partner and I developed a model to pinpoint patients likely n
 The project analyzed Bitcoin's historical trade data from January 2012 to March 2021, focusing on minute-to-minute OHLC prices and trade volume. Bitcoin markets were influenced by factors including trade volume and price points; high volume often signaled increased returns, while price fluctuations indicated market volatility. To achieve accurate forecasting, models such as ARFIMA, ARIMA, ETS, and SARIMA were employed, harnessing their capability to capture market dependencies and integrate past behaviors into predictions.
 
 *Language: R*
+
 *Libraries: dplyr; lubridate; zoo; ggplot2; imputeTS; forecast; TTR*
 
 ### Unemployment Rate
@@ -110,6 +116,7 @@ The project analyzed Bitcoin's historical trade data from January 2012 to March 
 This project involved a detailed analysis of unemployment rates in the U.S., examining variations across months, states, counties, and years using R. Seasonal trends revealed higher unemployment rates in winter, attributed to reduced agricultural and construction activities, with the lowest rates seen in the fall. Among states, Nebraska was found to have the most favorable employment landscape, thanks to its diversified industries and central geographical location, while Arizona faced challenges due to its heavy reliance on seasonal agriculture and unique federal funding for recognized tribes. At the county level, Steele County in North Dakota and Imperial County in California represented the extremes in employment prospects. Yearly data indicated sporadic spikes in unemployment, especially around 1992 and the early 2010s.
 
 *Language: R*
+
 *Libraries: ggplot2; dplyr*
 
 ---
@@ -124,6 +131,7 @@ This project involved a detailed analysis of unemployment rates in the U.S., exa
 In the analysis of an 8-million-record rideshare dataset from Chicago, we identified significant market trends: a clear seasonality influenced by weather, a strong preference for Toyota vehicles in black, and an average ride distance of 4.7 miles. These findings suggested potential collaborations, particularly with Toyota. Additionally, the emphasis on the importance of regular vehicle inspections underscored the need for safety advocacy. Using this data, strategies were formulated to optimize resource allocation and further emphasize safety in the rideshare industry.
 
 *Language: Python*
+
 *Libraries: pandas; numpy; matplotlib*
 
 ### Statistical Analysis of U.S. Hospital Mortality Rates
@@ -134,6 +142,7 @@ In the analysis of an 8-million-record rideshare dataset from Chicago, we identi
 Over a 6-month period, performance metrics from 4,000 U.S. hospitals were analyzed, focusing on ailments like heart failure and knee replacements. A BI tool was developed using a 3NF relational database with 11 tables, later transformed into a star schema for enhanced BI reporting. Through a Tableau dashboard, hospitals can evaluate their performance via KPIs, comparing themselves against regional or network benchmarks. Preliminary results showed larger hospital networks lagging in some metrics. Challenges included data gaps and a limited study window. Future studies could delve into hospital operations, patient feedback, and Medicare/Medicaid's influence.
 
 *Language: SQL*
+
 *Tools: Tableau; Excel*
 
 ---
@@ -146,6 +155,7 @@ Over a 6-month period, performance metrics from 4,000 U.S. hospitals were analyz
 This project entailed developing the "I-Go" application using Google API. The application's main goal was to map 28 landmarks across the UIUC campus, providing valuable assistance to visitors as they navigate the campus grounds. Special attention was given to designing a user-friendly interface that ensured easy navigation and quick access to detailed information about each landmark. To enhance the overall user experience and improve landmark visualization, interactive features were implemented using Java in Android Studio.
 
 *Language: Java*
+
 *Tools: Android Studio; Google API*
 
 ---
