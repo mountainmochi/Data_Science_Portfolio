@@ -73,7 +73,7 @@ The analysis revealed the profound impact of AI across various professions and i
 
 In this project, my partner and I developed an NLP model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis.
 
-The model achieved a respectable accuracy. Incorporated, it promised improved early interventions and potential cost savings for healthcare providers.
+The model achieved a 73% accuracy in predicting patients who needed surgical requirements. Incorporated, it promised improved early interventions and potential cost savings for healthcare providers.
 
 *Programming Language: Python*
 
