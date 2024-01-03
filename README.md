@@ -41,7 +41,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Electric%20Vehicle%20Smart%20Charge%20Scheduling/Final%20Presentation%20.pptx)
 
-This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I minimized peak grid demand and maximized the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL), and Actor-Critic in Proximal Policy Optimization (ACPPO). 
+This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL). My team and I enhanced ANL's EV infrastructure by minimizing peak grid demand and maximizing the utilization of cost-effective energy sources via Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL), and Actor-Critic in Proximal Policy Optimization (ACPPO). 
 
 
 We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% total charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result was the development of a more resilient, adaptive, and sustainable EV charging ecosystem aligned with the evolving landscape of clean energy and transportation.
@@ -71,9 +71,9 @@ The analysis revealed the profound impact of AI across various professions and i
 
 - [Python](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Hackathon%20Project/Hackathon%20Project.py)
 
-In this project, my partner and I developed an NLP model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT for analysis.
+In this project, my partner and I developed an NLP model (BERT) to pinpoint patients likely needing surgery using extensive EMR data.
 
-The model achieved a 73% accuracy in predicting patients who needed surgical requirements. Incorporated, it promised improved early interventions and potential cost savings for healthcare providers.
+Utilizing feature engineering for analysis, the model achieved a 73% accuracy in predicting patients who needed surgical requirements. Incorporated, it promised improved early interventions and potential cost savings for healthcare providers.
 
 *Programming Language: Python*
 
@@ -90,7 +90,7 @@ The model achieved a 73% accuracy in predicting patients who needed surgical req
 
 The project focused on improving eCommerce book sales by implementing an AI-powered recommendation engine. The primary objective was to target the top 15% of customers and provide them with personalized book recommendations. These tailored book suggestions were derived from analyzing user purchase history and engagement patterns. The project anticipated a significant sales boost of up to 20% within this targeted customer segment. This initiative was strategically framed as an AI-driven eCommerce personalization strategy, emphasizing the role of advanced algorithms in enhancing the customer experience and driving sales.
 
-By utilizing unsupervised clustering and machine learning techniques, the results highlighted the importance of strategic algorithmic updates in the eCommerce domain, boosting sales and creating a more engaging and personalized shopping experience for top-tier customers. The insights gained from this initiative provided valuable guidance for future strategies and emphasized the role of AI in driving eCommerce success.
+With unsupervised clustering and machine learning techniques, the results highlighted the importance of strategic algorithmic updates in the eCommerce domain, boosting sales and creating a more engaging and personalized shopping experience for top-tier customers. This initiative provided valuable guidance for future strategies and emphasized the role of AI in driving eCommerce success.
 
 *Programming Language: Python*
 
@@ -103,7 +103,7 @@ By utilizing unsupervised clustering and machine learning techniques, the result
 
 This project predicted the default behavior of credit card clients by analyzing the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. The study thoroughly examined correlations using machine learning methods, including box plots, logistic and probit classifications, ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks.
 
-After assessing the ML models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
+After evaluating the ML models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model revealed significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
 
 *Programming Language: R*
 
@@ -131,7 +131,7 @@ Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate 
 
 - [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Unemployment%20Rate/Unemployment-Rate.html)
 
-The project involved a detailed analysis of unemployment rates in the U.S., examining variations across months, states, counties, and years using R. The analysis revealed seasonal trends, with higher unemployment rates in winter due to reduced agricultural and construction activities and the lowest rates seen in the fall.
+The project involved a detailed analysis of unemployment rates in the U.S., examining variations across months, states, counties, and years using R. The analysis identified seasonal trends, with higher unemployment rates in winter due to reduced agricultural and construction activities and the lowest rates seen in the fall.
 
 The study also compared unemployment rates among states and counties. Nebraska was found to have the most favorable employment landscape, while Arizona faced challenges due to its heavy reliance on seasonal agriculture and unique federal funding for recognized tribes. At the county level, Steele County in North Dakota and Imperial County in California represented the extremes in employment prospects. The project examined yearly data, indicating sporadic unemployment spikes, especially around 1992 and the early 2010s.
 
@@ -148,7 +148,7 @@ The study also compared unemployment rates among states and counties. Nebraska w
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Chicago%20Rideshare%20Market%20Analysis/Group%20Project%20-%20Ride%20Share%20Analysis.pptx)
 
-Significant market trends were identified in the analysis of an 8-million-record rideshare dataset from Chicago. There was a clear seasonality influenced by weather and a strong preference for Toyota vehicles in black. Additionally, an average ride distance of 4.7 miles was observed.
+Chicago's rideshare market trends were identified by analyzing an 8-million-record rideshare dataset. There was a clear seasonality influenced by weather and a strong preference for Toyota vehicles in black. Additionally, drivers drove an average ride distance of 4.7 miles.
 
 The emphasis on the importance of regular vehicle inspections underscored the need for safety advocacy. Strategies were formulated to optimize resource allocation and further emphasize safety in the rideshare industry.
 
