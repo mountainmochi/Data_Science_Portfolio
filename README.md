@@ -4,7 +4,7 @@ Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive c
 
 Spanning across multiple domains, the portfolio demonstrates my adeptness in applying cutting-edge techniques and tools. In cases where data or code is absent, it is often due to file size limitations or privacy considerations.
 
-Delving into these projects will reveal the depth and breadth of advanced data science skills. For any inquiries or collaboration opportunities, please feel free to contact me at kimhyojun@uchicago.edu.
+Delving into these projects will reveal the depth and breadth of advanced data science skills. For any inquiries or collaboration opportunities, please contact me at kimhyojun@uchicago.edu.
 
 ---
 
