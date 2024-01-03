@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects along with presentations, each reflecting my expertise in data science.
+Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects and presentations, each reflecting my expertise in data science.
 
 Spanning across multiple domains, the portfolio demonstrates my adeptness in applying cutting-edge techniques and tools. In cases where data or code is absent, it is often due to file size limitations or privacy considerations.
 
@@ -41,7 +41,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Electric%20Vehicle%20Smart%20Charge%20Scheduling/Final%20Presentation%20.pptx)
 
-This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I minimized peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
+This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I minimized peak grid demand and maximized the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL), and Actor-Critic in Proximal Policy Optimization (ACPPO). 
 
 
 We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% total charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result was the development of a more resilient, adaptive, and sustainable EV charging ecosystem aligned with the evolving landscape of clean energy and transportation.
@@ -101,7 +101,7 @@ By utilizing unsupervised clustering and machine learning techniques, the result
 
 - [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
 
-This project predicted credit card clients’ default behavior by analyzing the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations thoroughly.
+This project predicted the default behavior of credit card clients by analyzing the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. The study thoroughly examined correlations using machine learning methods, including box plots, logistic and probit classifications, ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks.
 
 After assessing the ML models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
 
@@ -120,7 +120,7 @@ After assessing the ML models and their accuracy/error rates, the XG boost model
 
 The project analyzed Bitcoin’s historical trade data from January 2012 to March 2021, focusing on minute-to-minute OHLC prices and trade volume. Bitcoin markets were influenced by factors including trade volume and price points; high volume often signaled increased returns, while price fluctuations indicated market volatility.
 
-Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate forecasting. These models captured market dependencies and integrated past behaviors into predictions, providing a comprehensive understanding of Bitcoin market trends.
+Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate forecasting. These models captured market dependencies and integrated past behaviors into predictions, comprehensively understanding Bitcoin market trends.
 
 *Programming Language: R*
 
@@ -133,7 +133,7 @@ Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate 
 
 The project involved a detailed analysis of unemployment rates in the U.S., examining variations across months, states, counties, and years using R. The analysis revealed seasonal trends, with higher unemployment rates in winter due to reduced agricultural and construction activities and the lowest rates seen in the fall.
 
-The study also compared unemployment rates among states and counties. Nebraska was found to have the most favorable employment landscape, while Arizona faced challenges due to its heavy reliance on seasonal agriculture and unique federal funding for recognized tribes. At the county level, Steele County in North Dakota and Imperial County in California represented the extremes in employment prospects. The project further examined yearly data, indicating sporadic unemployment spikes, especially around 1992 and the early 2010s.
+The study also compared unemployment rates among states and counties. Nebraska was found to have the most favorable employment landscape, while Arizona faced challenges due to its heavy reliance on seasonal agriculture and unique federal funding for recognized tribes. At the county level, Steele County in North Dakota and Imperial County in California represented the extremes in employment prospects. The project examined yearly data, indicating sporadic unemployment spikes, especially around 1992 and the early 2010s.
 
 *Programming Language: R*
 
@@ -148,7 +148,7 @@ The study also compared unemployment rates among states and counties. Nebraska w
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Chicago%20Rideshare%20Market%20Analysis/Group%20Project%20-%20Ride%20Share%20Analysis.pptx)
 
-In the analysis of an 8-million-record rideshare dataset from Chicago, significant market trends were identified. There was a clear seasonality influenced by weather and a strong preference for Toyota vehicles in black. Additionally, an average ride distance of 4.7 miles was observed.
+Significant market trends were identified in the analysis of an 8-million-record rideshare dataset from Chicago. There was a clear seasonality influenced by weather and a strong preference for Toyota vehicles in black. Additionally, an average ride distance of 4.7 miles was observed.
 
 The emphasis on the importance of regular vehicle inspections underscored the need for safety advocacy. Strategies were formulated to optimize resource allocation and further emphasize safety in the rideshare industry.
 
@@ -161,7 +161,7 @@ The emphasis on the importance of regular vehicle inspections underscored the ne
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Statistical%20Analysis%20of%20U.S.%20Hospital%20Mortality%20Rates/Final%20Project%20Presentation.pptx)
 
-Over 6 months, performance metrics from 4,000 U.S. hospitals were analyzed, focusing on ailments, such as heart failure and knee replacements. A BI tool was developed using a 3NF relational database with 11 tables, which was later transformed into a star schema for enhanced BI reporting.
+Over 6 months, performance metrics from 4,000 U.S. hospitals were analyzed, focusing on ailments such as heart failure and knee replacements. A BI tool was developed using a 3NF relational database with 11 tables, which was later transformed into a star schema for enhanced BI reporting.
 
 Hospitals can evaluate their performance via KPIs through a Tableau dashboard, comparing themselves against regional or network benchmarks. Preliminary results showed larger hospital networks lagging in some metrics. Challenges included data gaps and a limited study window. Future studies could delve into hospital operations, patient feedback, and Medicare/Medicaid’s influence.
 
@@ -176,9 +176,9 @@ Hospitals can evaluate their performance via KPIs through a Tableau dashboard, c
 ### The I-Go Application
 *(May 2019, Software Development Project)*
 
-The project involved developing the “I-Go” application using the Google API. The primary objective of this application was to map 28 landmarks across the UIUC campus. This feature provided valuable assistance to visitors as they navigate the campus grounds. The application was developed using Java in Android Studio.
+The project involved developing the “I-Go” application using the Google API. The primary objective of this application was to map 28 landmarks across the UIUC campus. This feature provided valuable assistance to visitors as they navigated the campus grounds. The application was developed using Java in Android Studio.
 
-Special attention was given to designing a user-friendly interface that ensured easy navigation and quick access to detailed information about each landmark. Interactive features were implemented to enhance the overall user experience and improve landmark visualization. These enhancements made the application more engaging and useful for its users.
+Special attention was given to designing a user-friendly interface that ensured easy navigation and quick access to detailed information about each landmark. Interactive features were implemented to enhance the user experience and improve landmark visualization. These enhancements made the application more engaging and valuable for its users.
 
 *Programming Language: Java*
 
@@ -188,4 +188,4 @@ Special attention was given to designing a user-friendly interface that ensured 
 
 ## Review
 
-This portfolio is a comprehensive showcase of my data science, machine learning, and natural language processing expertise, highlighting a diverse range of projects demonstrating my ability to apply advanced techniques to real-world challenges. Feel free to explore each project to gain deeper insights into my capabilities. If you have any inquiries or potential collaborations, please contact me at kimhyojun@uchicago.edu.
+This portfolio is a comprehensive showcase of my data science, machine learning, and natural language processing expertise, highlighting a diverse range of projects demonstrating my ability to apply advanced techniques to real-world challenges. To gain deeper insights into my capabilities, please explore each project. If you have any inquiries or potential collaborations, please contact me at kimhyojun@uchicago.edu.
