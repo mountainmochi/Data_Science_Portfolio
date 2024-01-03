@@ -44,7 +44,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I aimed to minimize peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
 
 
-We achieved a 24.9% reduction in peak power demand using ANL over 42 days, a 70% total charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result was the development of a more resilient, adaptive, and sustainable EV charging ecosystem that aligns with the evolving landscape of clean energy and transportation.
+We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% total charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result was the development of a more resilient, adaptive, and sustainable EV charging ecosystem that aligns with the evolving landscape of clean energy and transportation.
 
 *Programming Language: Python*
 
