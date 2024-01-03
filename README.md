@@ -41,7 +41,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Electric%20Vehicle%20Smart%20Charge%20Scheduling/Final%20Presentation%20.pptx)
 
-This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I aimed to minimize peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
+This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I minimized peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
 
 
 We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% total charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result was the development of a more resilient, adaptive, and sustainable EV charging ecosystem aligned with the evolving landscape of clean energy and transportation.
@@ -88,9 +88,9 @@ The model achieved a 73% accuracy in predicting patients who needed surgical req
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/eCommerce%20Customer%20Segmentation/Group3_Final_Presentation_inperson.pptx)
 
-The project focused on improving e-commerce book sales by implementing an AI-powered Recommendation Engine. The primary objective was to target the top 15% of customers and provide them with personalized book recommendations. These tailored book suggestions were derived from analyzing user purchase history and engagement patterns. The project anticipated a significant sales boost of up to 20% within this targeted customer segment. This initiative was strategically framed as an AI-driven e-commerce Personalization strategy, emphasizing the role of advanced algorithms in enhancing the customer experience and driving sales.
+The project focused on improving eCommerce book sales by implementing an AI-powered recommendation engine. The primary objective was to target the top 15% of customers and provide them with personalized book recommendations. These tailored book suggestions were derived from analyzing user purchase history and engagement patterns. The project anticipated a significant sales boost of up to 20% within this targeted customer segment. This initiative was strategically framed as an AI-driven eCommerce personalization strategy, emphasizing the role of advanced algorithms in enhancing the customer experience and driving sales.
 
-The results of this project were presented to the CEO and professor, highlighting the importance of strategic algorithmic updates in the eCommerce domain. By harnessing the power of unsupervised clustering and machine learning techniques, the project aimed to boost sales and create a more engaging and personalized shopping experience for top-tier customers. The insights gained from this initiative provided valuable guidance for future strategies and emphasized the role of AI in driving e-commerce success.
+By utilizing unsupervised clustering and machine learning techniques, the results highlighted the importance of strategic algorithmic updates in the eCommerce domain, boosting sales and creating a more engaging and personalized shopping experience for top-tier customers. The insights gained from this initiative provided valuable guidance for future strategies and emphasized the role of AI in driving eCommerce success.
 
 *Programming Language: Python*
 
@@ -101,9 +101,9 @@ The results of this project were presented to the CEO and professor, highlightin
 
 - [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
 
-This project aimed to predict credit card clients’ default behavior by analyzing the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models, such as ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations.
+This project predicted credit card clients’ default behavior by analyzing the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations thoroughly.
 
-After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
+After assessing the ML models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
 
 *Programming Language: R*
 
@@ -120,7 +120,7 @@ After assessing different models and their accuracy/error rates, the XG boost mo
 
 The project analyzed Bitcoin’s historical trade data from January 2012 to March 2021, focusing on minute-to-minute OHLC prices and trade volume. Bitcoin markets were influenced by factors including trade volume and price points; high volume often signaled increased returns, while price fluctuations indicated market volatility.
 
-Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate forecasting. These models harnessed their capability to capture market dependencies and integrate past behaviors into predictions. This approach aimed to provide a comprehensive understanding of Bitcoin market trends.
+Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate forecasting. These models captured market dependencies and integrated past behaviors into predictions, providing a comprehensive understanding of Bitcoin market trends.
 
 *Programming Language: R*
 
@@ -150,7 +150,7 @@ The study also compared unemployment rates among states and counties. Nebraska w
 
 In the analysis of an 8-million-record rideshare dataset from Chicago, significant market trends were identified. There was a clear seasonality influenced by weather and a strong preference for Toyota vehicles in black. Additionally, an average ride distance of 4.7 miles was observed.
 
-These findings suggested potential collaborations, particularly with Toyota. The emphasis on the importance of regular vehicle inspections underscored the need for safety advocacy. Strategies were formulated to optimize resource allocation and further emphasize safety in the rideshare industry.
+The emphasis on the importance of regular vehicle inspections underscored the need for safety advocacy. Strategies were formulated to optimize resource allocation and further emphasize safety in the rideshare industry.
 
 *Programming Language: Python*
 
@@ -161,7 +161,7 @@ These findings suggested potential collaborations, particularly with Toyota. The
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Statistical%20Analysis%20of%20U.S.%20Hospital%20Mortality%20Rates/Final%20Project%20Presentation.pptx)
 
-Over 6 months, performance metrics from 4,000 U.S. hospitals were analyzed, focusing on ailments like heart failure and knee replacements. A BI tool was developed using a 3NF relational database with 11 tables, which was later transformed into a star schema for enhanced BI reporting.
+Over 6 months, performance metrics from 4,000 U.S. hospitals were analyzed, focusing on ailments, such as heart failure and knee replacements. A BI tool was developed using a 3NF relational database with 11 tables, which was later transformed into a star schema for enhanced BI reporting.
 
 Hospitals can evaluate their performance via KPIs through a Tableau dashboard, comparing themselves against regional or network benchmarks. Preliminary results showed larger hospital networks lagging in some metrics. Challenges included data gaps and a limited study window. Future studies could delve into hospital operations, patient feedback, and Medicare/Medicaid’s influence.
 
@@ -176,9 +176,9 @@ Hospitals can evaluate their performance via KPIs through a Tableau dashboard, c
 ### The I-Go Application
 *(May 2019, Software Development Project)*
 
-The project involved developing the “I-Go” application using the Google API. The primary objective of this application was to map 28 landmarks across the UIUC campus. This feature aimed to provide valuable assistance to visitors as they navigate the campus grounds. The application was developed using Java in Android Studio.
+The project involved developing the “I-Go” application using the Google API. The primary objective of this application was to map 28 landmarks across the UIUC campus. This feature provided valuable assistance to visitors as they navigate the campus grounds. The application was developed using Java in Android Studio.
 
-Special attention was given to designing a user-friendly interface that ensured easy navigation and quick access to detailed information about each landmark. Interactive features were implemented to enhance the overall user experience and improve landmark visualization. These enhancements aimed to make the application more engaging and useful for its users.
+Special attention was given to designing a user-friendly interface that ensured easy navigation and quick access to detailed information about each landmark. Interactive features were implemented to enhance the overall user experience and improve landmark visualization. These enhancements made the application more engaging and useful for its users.
 
 *Programming Language: Java*
 
