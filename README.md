@@ -41,7 +41,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Electric%20Vehicle%20Smart%20Charge%20Scheduling/Final%20Presentation%20.pptx)
 
-This project focuses on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I aimed to minimize peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
+This project focused on optimizing electric vehicle (EV) charging systems for the Transportation and Power Systems Division at Argonne National Laboratory (ANL) to improve ANL's EV infrastructure. My team and I aimed to minimize peak grid demand and maximize the utilization of cost-effective energy sources at ANL's EV charging stations by implementing Multi-Objective Linear Programming (MOLP), Epilson-Greedy in Q-Learning (EGQL) and Actor-Critic in Proximal Policy Optimization (ACPPO). 
 
 
 My team and I achieved a 24.9% reduction in peak power demand with ANL over 42 days, 70% full charge upon EV arrival, and enhanced EV charging efficiency by 17% via MOLP, EGQL, and ACPPO. The envisioned result is the development of a more resilient, adaptive, and sustainable EV charging ecosystem that aligns with the evolving landscape of clean energy and transportation.
