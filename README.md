@@ -71,7 +71,7 @@ The analysis revealed the profound impact of AI across various professions and i
 
 - [Python](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Hackathon%20Project/Hackathon%20Project.py)
 
-In this project, my partner and I developed a model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis.
+In this project, my partner and I developed a NLP model to pinpoint patients likely needing surgery using extensive EMR data. We applied feature engineering and BERT, an NLP model, for analysis.
 
 The model achieved a respectable accuracy. Incorporated, it promised improved early interventions and potential cost savings for healthcare providers.
 
