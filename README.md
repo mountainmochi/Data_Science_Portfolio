@@ -1,8 +1,8 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects along with presentations, each reflecting my expertise in data science, machine learning, or natural language processing.
+Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects along with presentations, each reflecting my expertise in data science.
 
-Spanning across multiple domains, the portfolio demonstrates my adeptness in applying cutting-edge techniques and tools. In cases where data is absent, it is often due to file size limitations or privacy considerations.
+Spanning across multiple domains, the portfolio demonstrates my adeptness in applying cutting-edge techniques and tools. In cases where data or code is absent, it is often due to file size limitations or privacy considerations.
 
 Delving into these projects will reveal the depth and breadth of advanced data science skills. For any inquiries or collaboration opportunities, please feel free to contact me at kimhyojun@uchicago.edu.
 
@@ -10,14 +10,16 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 ## Contents
 
-### Machine Learning
-- [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
-- [eCommerce Customer Segmentation](#ecommerce-customer-segmentation)
-- [The Patterns of Paying Debts of Credit Card Clients](#the-patterns-of-paying-debts-of-credit-card-clients)
+### Reinforcement Learning
+- [Electric Vehicle Smart Charge Scheduling](#electric-vehicle-smart-charge-scheduling)
 
 ### Natural Language Processing
 - [AI's Evolutionary Path: What the Future Holds](#ais-evolutionary-path-what-the-future-holds)
 - [Hackathon Project](#hackathon-project)
+
+### Machine Learning
+- [eCommerce Customer Segmentation](#ecommerce-customer-segmentation)
+- [The Patterns of Paying Debts of Credit Card Clients](#the-patterns-of-paying-debts-of-credit-card-clients)
 
 ### Time Series Analysis and Forecasting
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
@@ -32,49 +34,22 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 ---
 
-## Machine Learning
+## Reinforcement Learning
 
-### Predictive Analysis of Bitcoin Returns
-*(May 2023, ML/Time Series Project)*
+### Electric Vehicle Smart Charge Scheduling
+*(Dec. 2023, RL Project)*
 
-- [Presentation (PDF)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Predictive%20Analysis%20of%20Bitcoin%20Returns/Hyojun_Kim_TS_Final_Project.pdf)
+- [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/AI's%20Evolutionary%20Path%3A%20What%20the%20Future%20Holds/AI's%20Evolutionary%20Path%20-%20What%20the%20Future%20Holds.pptx)
 
-The project analyzed Bitcoin’s historical trade data from January 2012 to March 2021, examining minute-to-minute OHLC prices and trade volume. It recognized that trade volume and price points significantly influence Bitcoin markets. As a result, the study aimed to predict future returns based on these data points.
+In this project, advanced NLP techniques were employed, including data preprocessing, topic modeling, classification, targeted sentiment analysis, and Named Entity Recognition. These techniques were applied to a comprehensive analysis of 200,000 news articles.
 
-To achieve this, various time series forecasting models, including ARFIMA, ARIMA, ETS, and SARIMA, were employed. These models were chosen for their ability to capture market patterns and historical trends, which were crucial for accurate forecasting. In this analysis, the project delved deep into the intricacies of Bitcoin market data, leveraging advanced statistical methods to uncover insights that could inform investment decisions and strategies.
-
-*Programming Language: R*
-
-*Libraries: dplyr; ggplot2; lubridate; forecast; imputeTS; corrplot*
-
-### eCommerce Customer Segmentation
-*(Dec. 2022, ML Project)*
-
-- [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/eCommerce%20Customer%20Segmentation/Group3_Final_Presentation_inperson.pptx)
-
-The project had a specific focus on improving eCommerce book sales by implementing an AI-powered Recommendation Engine. The primary objective was to target the top 15% of customers and provide them with personalized book recommendations. These tailored book suggestions were derived from analyzing user purchase history and engagement patterns. The project aimed to anticipate a significant sales boost of up to 20% within this targeted customer segment. This initiative was strategically framed as an AI-Driven eCommerce Personalization strategy, emphasizing the role of advanced algorithms in enhancing the customer experience and driving sales.
-
-The results of this project were presented to the CEO and professor, highlighting the importance of strategic algorithmic updates in the eCommerce domain. By harnessing the power of unsupervised clustering and machine learning techniques, the project not only aimed to boost sales but also to create a more engaging and personalized shopping experience for the top-tier customers. The insights gained from this initiative provided valuable guidance for future strategies and emphasized the role of AI in driving eCommerce success.
+The analysis revealed the profound impact of AI across various professions and industry sectors. By offering actionable insights and recommendations, the project highlighted the transformative potential of AI in diverse fields.
 
 *Programming Language: Python*
 
-*Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn*
-
-### The Patterns of Paying Debts of Credit Card Clients
-*(Dec. 2019, ML Project)*
-
-- [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
-
-This project aimed to predict credit card clients’ default behavior through an analysis of the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models like ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations.
-
-After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
-
-*Programming Language: R*
-
-*Libraries: glm, glmnet, class, tree, randomForest, e1071, tensorflow, keras*
+*Libraries: pandas; numpy; scikit-learn; matplotlib; seaborn; gensim; spacy; nltk; pyLDAvis; tensorflow*
 
 ---
-
 ## Natural Language Processing
 
 ### AI's Evolutionary Path: What the Future Holds
@@ -102,6 +77,36 @@ The model achieved a respectable accuracy. When incorporated, it promised improv
 *Programming Language: Python*
 
 *Libraries: pandas; tensorflow; matplotlib*
+
+---
+
+## Machine Learning
+
+### eCommerce Customer Segmentation
+*(Dec. 2022, ML Project)*
+
+- [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/eCommerce%20Customer%20Segmentation/Group3_Final_Presentation_inperson.pptx)
+
+The project had a specific focus on improving eCommerce book sales by implementing an AI-powered Recommendation Engine. The primary objective was to target the top 15% of customers and provide them with personalized book recommendations. These tailored book suggestions were derived from analyzing user purchase history and engagement patterns. The project aimed to anticipate a significant sales boost of up to 20% within this targeted customer segment. This initiative was strategically framed as an AI-Driven eCommerce Personalization strategy, emphasizing the role of advanced algorithms in enhancing the customer experience and driving sales.
+
+The results of this project were presented to the CEO and professor, highlighting the importance of strategic algorithmic updates in the eCommerce domain. By harnessing the power of unsupervised clustering and machine learning techniques, the project not only aimed to boost sales but also to create a more engaging and personalized shopping experience for the top-tier customers. The insights gained from this initiative provided valuable guidance for future strategies and emphasized the role of AI in driving eCommerce success.
+
+*Programming Language: Python*
+
+*Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn*
+
+### The Patterns of Paying Debts of Credit Card Clients
+*(Dec. 2019, ML Project)*
+
+- [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
+
+This project aimed to predict credit card clients’ default behavior through an analysis of the relationship between independent and dependent variables. The goal was to enhance predictive accuracy and understand variable impacts on debt repayment behavior. Utilizing various machine learning methods, including box plots, logistic and probit classifications, and advanced models like ridge, lasso, tree, bagging, random forest, boosting, XG boost, support vector machine, and neural networks, the study examined correlations.
+
+After assessing different models and their accuracy/error rates, the XG boost model emerged as the most effective choice, achieving the lowest error rate of 0.177. This model illuminated significant coefficients and associations related to genders, education levels, age groups, and debt repayment tendencies.
+
+*Programming Language: R*
+
+*Libraries: glm, glmnet, class, tree, randomForest, e1071, tensorflow, keras*
 
 ---
 
