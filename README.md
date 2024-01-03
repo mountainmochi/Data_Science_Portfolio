@@ -58,7 +58,7 @@ We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% 
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/AI's%20Evolutionary%20Path%3A%20What%20the%20Future%20Holds/AI's%20Evolutionary%20Path%20-%20What%20the%20Future%20Holds.pptx)
 
-This project employed advanced NLP techniques, including data preprocessing, topic modeling, classification, targeted sentiment analysis, and Named Entity Recognition. These techniques were applied to a comprehensive analysis of 200,000 news articles.
+This project employed advanced NLP techniques, including data preprocessing, topic modeling, classification, targeted sentiment analysis, and named entity recognition. These techniques were applied to a comprehensive analysis of 200,000 news articles.
 
 The analysis revealed the profound impact of AI across various professions and industry sectors. By offering actionable insights and recommendations, the project highlighted the transformative potential of AI in diverse fields.
 
