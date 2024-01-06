@@ -126,7 +126,7 @@ train <- data[1:(nrow(data) - 12), 'Close']
 test <- data[(nrow(data) - 11):nrow(data), 'Close']
 
 # Sample a subset of the data for the ADF test
-sample_size <- 1000  # Adjust the sample size as per your computational limitations
+sample_size <- 1000  # Adjust the sample size 
 sample_data <- sample(train, size = sample_size)
 
 # Check if train data is stationary using Augmented Dickey Fuller Test
