@@ -49,7 +49,7 @@ The system uses Moving Average Crossover and ARIMA models to generate signals ev
 
 *Programming Language: Python*
 
-*Libraries: pandas, numpy, matplotlib, scikit-learn, pmdarima, tensorflow, PyTorch, nltk, transformers*
+*Libraries: pandas, numpy, matplotlib, scikit-learn, pmdarima, tensorflow, pytorch, nltk, transformers*
 
 ---
 ## Reinforcement Learning
@@ -66,7 +66,7 @@ We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% 
 
 *Programming Language: Python*
 
-*Libraries: pandas, numpy, seaborn, matplotlib, pulp, glob, tensorflow, PyTorch*
+*Libraries: pandas, numpy, seaborn, matplotlib, pulp, glob, tensorflow, pytorch*
 
 ---
 ## Natural Language Processing
@@ -82,7 +82,7 @@ The analysis revealed the profound impact of AI across various professions and i
 
 *Programming Language: Python*
 
-*Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, gensim, spacy, nltk, pyLDAvis, tensorflow*
+*Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, gensim, spacy, nltk, pyldavis, tensorflow*
 
 ### Hackathon Project
 *(May 2023, NLP Project)*
@@ -142,7 +142,7 @@ Models such as ARFIMA, ARIMA, ETS, and SARIMA were employed to achieve accurate 
 
 *Programming Language: R*
 
-*Libraries: dplyr, lubridate, zoo, ggplot2, imputeTS, forecast, TTR*
+*Libraries: dplyr, lubridate, zoo, ggplot2, imputets, forecast, ttr*
 
 ### Unemployment Rate
 *(Dec. 2020, Time Series Project)*
