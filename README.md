@@ -28,7 +28,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
 - [Unemployment Rate](#unemployment-rate)
 
-### Data Analysis and Visualizatio
+### Data Analysis and Visualization
 - [Chicago Rideshare Market Analysis](#chicago-rideshare-market-analysis)
 - [Statistical Analysis of U.S. Hospital Mortality Rates](#statistical-analysis-of-us-hospital-mortality-rates)
 
