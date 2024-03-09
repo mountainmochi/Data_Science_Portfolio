@@ -10,6 +10,9 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 ## Contents
 
+### Interdiscplinary Application of AI/ML
+- [Action Recommendation System](#action-recommendation-system)
+
 ### Reinforcement Learning
 - [Electric Vehicle Smart Charge Scheduling](#electric-vehicle-smart-charge-scheduling)
 
@@ -33,7 +36,22 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 - [The I-Go Application](#the-i-go-application)
 
 ---
+## Interdiscplinary Application of AI/ML
 
+### Action Recommendation System (ATS)
+*(Mar. 2024, TS/NLP Project)*
+
+- [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Action%20Recommendation%20System%20(ATS)/Action%20Recommendation%20System%20Presentation.pptx)
+
+ATS was designed to simplify trading decisions for retail investors, who typically rely on manual approaches, such as general research or manual market analysis, and gut feel. The goal was to develop a proof-of-concept alert system that provides real-time buy/sell signals for tracked stocks when certain conditions are met. This system integrates methods currently employed by investors and more advanced ML modeling in an automated, real-time system.
+
+The system uses Moving Average Crossover and ARIMA models to generate signals every 60 seconds. It also employs momentum indicators, popular among day trading retail investors, to determine the strength/weakness of a stock's price. Additionally, ATS conducts news sentiment analysis using data from Yahoo and Bing's News Search APIs, processed through a pre-trained FinBERT model. This comprehensive approach aims to make it easier for retail investors to make informed trading decisions.
+
+*Programming Language: Python*
+
+*Libraries: pandas, numpy, matplotlib, scikit-learn, pmdarima, tensorflow, PyTorch, nltk, transformers*
+
+---
 ## Reinforcement Learning
 
 ### Electric Vehicle Smart Charge Scheduling
