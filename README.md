@@ -38,7 +38,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 ---
 ## Interdiscplinary Application of AI/ML
 
-### Action Recommendation System (ATS)
+### Action Recommendation System
 *(Mar. 2024, TS/NLP Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Action%20Recommendation%20System%20(ATS)/Action%20Recommendation%20System%20Presentation.pptx)
