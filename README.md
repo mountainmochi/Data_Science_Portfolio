@@ -52,7 +52,7 @@ The system uses Moving Average Crossover and ARIMA models to generate signals ev
 *Libraries: pandas, numpy, matplotlib, scikit-learn, pmdarima, tensorflow, PyTorch, nltk, transformers*
 
 ---
-## Reinforcement Learning
+## Reinforcement Learnin
 
 ### Electric Vehicle Smart Charge Scheduling
 *(Dec. 2023, RL Project)*
