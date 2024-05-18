@@ -10,7 +10,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 
 ## Contents
 
-### Interdiscplinary Application of AI/ML
+### Quantitative Finance
 - [Action Recommendation System](#action-recommendation-system)
 
 ### Reinforcement Learning
