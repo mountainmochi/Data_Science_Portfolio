@@ -36,7 +36,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 - [The I-Go Application](#the-i-go-application)
 
 ---
-## Interdiscplinary Application of AI/ML
+## Quantitative Finance
 
 ### Action Recommendation System
 *(Mar. 2024, TS/NLP Project)*
