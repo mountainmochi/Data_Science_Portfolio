@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects and presentations, each reflecting my expertise in data science.
+Welcome to my Data Science Portfolio. This portfolio showcases a comprehensive collection of projects and presentations, each reflecting my expertise in data science, including data engineering.
 
 Spanning across multiple domains, the portfolio demonstrates my adeptness in applying cutting-edge techniques and tools. In cases where data or code is absent, it is often due to file size limitations or privacy considerations.
 
@@ -28,7 +28,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
 - [Unemployment Rate](#unemployment-rate)
 
-### Data Analysis and Visualization
+### Data Analysis and Visualization w/ Data Engineering
 - [Chicago Rideshare Market Analysis](#chicago-rideshare-market-analysis)
 - [Statistical Analysis of U.S. Hospital Mortality Rates](#statistical-analysis-of-us-hospital-mortality-rates)
 
@@ -39,7 +39,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 ## Quantitative Finance
 
 ### Action Recommendation System
-*(Mar. 2024, TS/NLP Project)*
+*(Mar. 2024, Time Series/ Natural Language Processing Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Action%20Recommendation%20System%20(ARS)/Action%20Recommendation%20System%20Presentation.pptx)
 
@@ -55,7 +55,7 @@ The system uses Moving Average Crossover and ARIMA models to generate signals ev
 ## Reinforcement Learning
 
 ### Electric Vehicle Smart Charge Scheduling
-*(Dec. 2023, RL Project)*
+*(Dec. 2023, Reinforcement Learning Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Electric%20Vehicle%20Smart%20Charge%20Scheduling/Final%20Presentation%20.pptx)
 
@@ -72,7 +72,7 @@ We achieved a 24.9% reduction in peak power demand with ANL over 42 days, a 70% 
 ## Natural Language Processing
 
 ### AI's Evolutionary Path: What the Future Holds
-*(Aug. 2023, NLP Project)*
+*(Aug. 2023, Natural Language Processing Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/AI's%20Evolutionary%20Path%3A%20What%20the%20Future%20Holds/AI's%20Evolutionary%20Path%20-%20What%20the%20Future%20Holds.pptx)
 
@@ -85,7 +85,7 @@ The analysis revealed the profound impact of AI across various professions and i
 *Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, gensim, spacy, nltk, pyldavis, tensorflow*
 
 ### Hackathon Project
-*(May 2023, NLP Project)*
+*(May 2023, Natural Language Processing Project)*
 
 - [Python](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Hackathon%20Project/Hackathon%20Project.py)
 
@@ -102,7 +102,7 @@ Utilizing feature engineering for analysis, the model achieved a 73% accuracy in
 ## Machine Learning
 
 ### eCommerce Customer Segmentation
-*(Dec. 2022, ML Project)*
+*(Dec. 2022, Machine Learning Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/eCommerce%20Customer%20Segmentation/Group3_Final_Presentation_inperson.pptx)
 
@@ -115,7 +115,7 @@ With unsupervised clustering and machine learning techniques, the results highli
 *Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn*
 
 ### The Patterns of Paying Debts of Credit Card Clients
-*(Dec. 2019, ML Project)*
+*(Dec. 2019, Machine Learning Project)*
 
 - [RStudio (HTML)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients/The%20Patterns%20of%20Paying%20Debts%20of%20Credit%20Card%20Clients.pdf)
 
@@ -132,7 +132,7 @@ After evaluating the ML models and their accuracy/error rates, the XG boost mode
 ## Time Series Analysis and Forecasting
 
 ### Predictive Analysis of Bitcoin Returns
-*(May 2023, ML/Time Series Project)*
+*(May 2023, Time Series Project)*
 
 - [Presentation (PDF)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Predictive%20Analysis%20of%20Bitcoin%20Returns/Hyojun_Kim_TS_Final_Project.pdf)
 
@@ -175,7 +175,7 @@ The emphasis on the importance of regular vehicle inspections underscored the ne
 *Libraries: pandas, numpy, matplotlib*
 
 ### Statistical Analysis of U.S. Hospital Mortality Rates
-*(Mar. 2023, SQL-Based Data Analysis/BI Visualization Project)*
+*(Mar. 2023, SQL-Based Data Analysis (Data Engineering)/ BI Visualization Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Statistical%20Analysis%20of%20U.S.%20Hospital%20Mortality%20Rates/Final%20Project%20Presentation.pptx)
 
@@ -206,4 +206,4 @@ Special attention was given to designing a user-friendly interface that ensured 
 
 ## Review
 
-This portfolio is a comprehensive showcase of my data science, machine learning, and natural language processing expertise, highlighting a diverse range of projects demonstrating my ability to apply advanced techniques to real-world challenges. To gain deeper insights into my capabilities, please explore each project. If you have any inquiries or potential collaborations, please contact me at kimhyojun@uchicago.edu.
+My portfolio comprehensively showcases my expertise, from the initial stages of data engineering to the final deployment of various models. These projects highlight my ability to apply advanced techniques to real-world challenges. To gain deeper insights into my capabilities, please explore each project. If you have any inquiries or potential collaborations, please contact me at kimhyojun@uchicago.edu.
