@@ -28,7 +28,7 @@ Delving into these projects will reveal the depth and breadth of advanced data s
 - [Predictive Analysis of Bitcoin Returns](#predictive-analysis-of-bitcoin-returns)
 - [Unemployment Rate](#unemployment-rate)
 
-### Data Analysis and Visualization w/ Data Engineering
+### Data Analysis and Visualization
 - [Chicago Rideshare Market Analysis](#chicago-rideshare-market-analysis)
 - [Statistical Analysis of U.S. Hospital Mortality Rates](#statistical-analysis-of-us-hospital-mortality-rates)
 
@@ -175,7 +175,7 @@ The emphasis on the importance of regular vehicle inspections underscored the ne
 *Libraries: pandas, numpy, matplotlib*
 
 ### Statistical Analysis of U.S. Hospital Mortality Rates
-*(Mar. 2023, SQL-Based Data Analysis (Data Engineering)/ BI Visualization Project)*
+*(Mar. 2023, Data Engineering/ BI Visualization Project)*
 
 - [Presentation (PPT)](https://github.com/mountainmochi/Data_Science_Portfolio/blob/main/Statistical%20Analysis%20of%20U.S.%20Hospital%20Mortality%20Rates/Final%20Project%20Presentation.pptx)
 
